@@ -13,13 +13,15 @@ Todos los pedidos son devueltos en formato JSON.
 
 ## Instalación
 
-git clone https://github.com/gonAlmiron/locations-tech-challenge
+Si se desea probar localmente la aplicacion:
 
-cd locations-tech-challenge
+- git clone https://github.com/gonAlmiron/deploy-challenge
 
-npm install
+- cd deploy-challenge
 
-npm start
+- npm install
+
+- npm start
 
 ### Dependencias y versiones instaladas en la api:
 
@@ -49,5 +51,22 @@ Desde allí es posible probar los endpoints donde se encuentran las respuestas a
 ## Deployment
 
 La solución está en linea corriendo en una instancia AWS:
+
+http://ec2-44-211-74-174.compute-1.amazonaws.com:3000/
+
+## Prueba
+
+Si se desea realizar una peticion desde un cliente:
+
+- Para ver el nombre de la locality que cuenta con la mayor cantidad de neighborhood cargados en el gestor.
+Ruta: '/api/data'
+Link: 'http://ec2-44-211-74-174.compute-1.amazonaws.com:3000/api/data'
+
+- Para ver el listado de locaciones del tipo place los cuales se encuentran a 50km a la redonda de la lat/lng de la region más al sur del globo terraqueo que se haya cargado al gestor.
+Ruta: '/api/location'
+Link: 'http://ec2-44-211-74-174.compute-1.amazonaws.com:3000/api/location'
+
+
+
 
 

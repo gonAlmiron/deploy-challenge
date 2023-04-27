@@ -8,10 +8,10 @@ export const info = {
         },
         servers: [
             { 
-                url: 'http://localhost:3001'
+                url: 'http://localhost:3000'
             },
             { 
-                url: 'http://aws.challenge.com'
+                url: 'http://ec2-44-211-74-174.compute-1.amazonaws.com:3000'
             }
         ]
     },
