@@ -1,0 +1,34 @@
+components:
+  schema:
+    Locality:
+      Locality:
+        type: object
+        properties: 
+          request:
+            type: string
+            description: Nombre de la Locality que cuenta con la mayor cantidad de barrios
+          response:
+            type: string
+            description: Respuesta a la petición
+        example:
+          request: Nombre de la Locality que cuenta con la mayor cantidad de barrios
+          response: Los Angeles
+      NotFound:
+        type: string
+        description: Error en el servidor
+    Places:
+      Place:
+        type: object
+        properties: 
+          request:
+            type: string
+            description: Listado de locaciones del tipo place los cuales se encuentran a 50km a la redonda de la lat/lng de la region más al sur del globo terraqueo que se haya cargado al gestor.
+          response:
+            type: string
+            description: Respuesta a la petición
+        example:
+          request: Locaciones de tipo Place ubicadas 50km a la redonda de la locación más al sur
+          response: Cordoba, San Juan
+      NotFound:
+        type: string
+        description: Error en el servidor

@@ -1,0 +1,31 @@
+paths:
+  /api/data:
+    get: 
+      tags:
+      - Locality
+      summary: 
+      responses:
+        200:
+          description: Nombre de la locality que cuenta con la mayor cantidad de neighborhood cargados en el gestor.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Locality/Locality'
+        500:
+          description: Error en el servidor
+          $ref: '#/components/schema/Locality/NotFound' 
+  /api/location:
+    get: 
+      tags:
+      - Places
+      summary: 
+      responses:
+        200:
+          description: Listado de locaciones del tipo place los cuales se encuentran a 50km a la redonda de la lat/lng de la region más al sur del globo terraqueo que se haya cargado al gestor.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Places/Place'
+        500:
+          description: Error en el servidor
+          $ref: '#/components/schema/Places/NotFound' 
